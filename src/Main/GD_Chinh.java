@@ -32,7 +32,17 @@ public class GD_Chinh extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         
+//        btn_tab_SanPham.setBorder(active_border);
+//        btn_tab_SanPham.setForeground(Color.black);
+//        
+        btn_tab_NV.setBorder(active_border);
+        btn_tab_NV.setForeground(Color.black);
+//        
+        btn_tab_KhachHang.setBorder(active_border);
+        btn_tab_KhachHang.setForeground(Color.black);
+        
         addBorder();
+        
     }
    
     /**
@@ -82,28 +92,75 @@ public class GD_Chinh extends javax.swing.JFrame {
         lbl_exit = new javax.swing.JLabel();
         pnl_FormTongQuan = new javax.swing.JPanel();
         lbl_text_TongQuan = new javax.swing.JLabel();
-        pnl_FormBanHang = new javax.swing.JPanel();
-        lbl_text_BanHang = new javax.swing.JLabel();
-        pnl_menuTab_BanHang = new javax.swing.JPanel();
-        btn_tab_BanHang = new javax.swing.JButton();
         pnl_FormSanPham = new javax.swing.JPanel();
         lbl_text_SanPham = new javax.swing.JLabel();
         pnl_menuTab_SanPham = new javax.swing.JPanel();
         btn_tab_SanPham = new javax.swing.JButton();
         btn_tab_LoaiSanPham = new javax.swing.JButton();
         btn_tab_NhaCungCap = new javax.swing.JButton();
+        pnl_tab_FormSanPham = new javax.swing.JPanel();
+        pnl_tab_FormLSanPham = new javax.swing.JPanel();
+        pnl_tab_FormNhaCungCap = new javax.swing.JPanel();
         pnl_FormKhachHang = new javax.swing.JPanel();
         lbl_text_KhachHang = new javax.swing.JLabel();
+        pnl_menuTab_KhachHang = new javax.swing.JPanel();
+        btn_tab_KhachHang = new javax.swing.JButton();
+        pnl_tab_FormKhachHang = new javax.swing.JPanel();
         pnl_FormNhanVien = new javax.swing.JPanel();
         lbl_text_NhanVien = new javax.swing.JLabel();
+        pnl_menuTab_NhanVien = new javax.swing.JPanel();
+        btn_tab_NV = new javax.swing.JButton();
+        btn_tab_CaLam = new javax.swing.JButton();
+        btn_tab_Luong = new javax.swing.JButton();
+        pnl_tab_FormTTNhanVien = new javax.swing.JPanel();
+        pnl_tab_FormCaLam = new javax.swing.JPanel();
+        pnl_tab_FormLuong = new javax.swing.JPanel();
         pnl_FormTimKiem = new javax.swing.JPanel();
         lbl_text_TimKiem = new javax.swing.JLabel();
+        pnl_menuTab_TimKiem = new javax.swing.JPanel();
+        btn_tab_TKnv = new javax.swing.JButton();
+        btn_tab_TKkh = new javax.swing.JButton();
+        btn_tab_TKsp = new javax.swing.JButton();
+        btn_tab_TKsp1 = new javax.swing.JButton();
+        btn_tab_TKncc = new javax.swing.JPanel();
+        pnl_tab_FormTKKH = new javax.swing.JPanel();
+        pnl_tab_FormTKSP = new javax.swing.JPanel();
+        pnl_tab_FormTKNCC = new javax.swing.JPanel();
         pnl_FormHeThong = new javax.swing.JPanel();
         lbl_text_HeThong = new javax.swing.JLabel();
+        pnl_menuTab_HeThong = new javax.swing.JPanel();
+        btn_tab_HeThong = new javax.swing.JButton();
+        pnl_tab_FormHeThong = new javax.swing.JPanel();
         pnl_FormThongKe = new javax.swing.JPanel();
         lbl_text_ThongKe = new javax.swing.JLabel();
+        pnl_menuTab_ThongKe = new javax.swing.JPanel();
+        btn_tab_TKeDT = new javax.swing.JButton();
+        btn_tab_TKeHT = new javax.swing.JButton();
+        btn_tab_TKeHBC = new javax.swing.JButton();
+        btn_tab_TKeKH = new javax.swing.JButton();
+        btn_tab_TKedt = new javax.swing.JPanel();
+        pnl_tab_FormTKeht = new javax.swing.JPanel();
+        pnl_tab_FormTKhbc = new javax.swing.JPanel();
+        pnl_tab_FormTKkh = new javax.swing.JPanel();
+        pnl_FormTTTaiKhoan = new javax.swing.JPanel();
+        lbl_text_TTTK = new javax.swing.JLabel();
+        pnl_menuTab_TTTK = new javax.swing.JPanel();
+        btn_tab_TTTK = new javax.swing.JButton();
+        pnl_tab_FormTTTK = new javax.swing.JPanel();
+        pnl_FormBanHang = new javax.swing.JPanel();
+        lbl_text_BanHang = new javax.swing.JLabel();
+        pnl_menuTab_BanHang = new javax.swing.JPanel();
+        btn_tab_1 = new javax.swing.JButton();
+        btn_tab_2 = new javax.swing.JButton();
+        btn_tab_3 = new javax.swing.JButton();
+        btn_tab_4 = new javax.swing.JButton();
+        btn_tab_sp1 = new javax.swing.JPanel();
+        pnl_tab_sp2 = new javax.swing.JPanel();
+        pnl_tab_sp3 = new javax.swing.JPanel();
+        pnl_tab_sp4 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         pnl_Main.setBackground(new java.awt.Color(255, 255, 255));
         pnl_Main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -393,7 +450,14 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_Menu_button.add(pnl_button_ThongKe, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 210, 50));
 
         pnl_ThongTinTaiKhoan.setBackground(new java.awt.Color(153, 204, 255));
+        pnl_ThongTinTaiKhoan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pnl_ThongTinTaiKhoanMouseClicked(evt);
+            }
+        });
 
+        lbl_icon_TaiKhoan.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_icon_TaiKhoan.setForeground(new java.awt.Color(255, 255, 255));
         lbl_icon_TaiKhoan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_icon_TaiKhoan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgVSicon/user.png"))); // NOI18N
 
@@ -458,66 +522,28 @@ public class GD_Chinh extends javax.swing.JFrame {
 
         pnl_Main.add(pnl_FormTongQuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
 
-        pnl_FormBanHang.setBackground(new java.awt.Color(255, 255, 255));
-        pnl_FormBanHang.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbl_text_BanHang.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        lbl_text_BanHang.setForeground(new java.awt.Color(0, 153, 204));
-        lbl_text_BanHang.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_text_BanHang.setText("Bán Hàng");
-        pnl_FormBanHang.add(lbl_text_BanHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 50));
-
-        pnl_menuTab_BanHang.setBackground(new java.awt.Color(255, 255, 255));
-
-        btn_tab_BanHang.setBackground(new java.awt.Color(255, 255, 255));
-        btn_tab_BanHang.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        btn_tab_BanHang.setForeground(new java.awt.Color(153, 153, 153));
-        btn_tab_BanHang.setText("Bán Hàng");
-        btn_tab_BanHang.setBorder(null);
-        btn_tab_BanHang.setContentAreaFilled(false);
-        btn_tab_BanHang.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_tab_BanHangActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnl_menuTab_BanHangLayout = new javax.swing.GroupLayout(pnl_menuTab_BanHang);
-        pnl_menuTab_BanHang.setLayout(pnl_menuTab_BanHangLayout);
-        pnl_menuTab_BanHangLayout.setHorizontalGroup(
-            pnl_menuTab_BanHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_menuTab_BanHangLayout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(btn_tab_BanHang)
-                .addContainerGap(938, Short.MAX_VALUE))
-        );
-        pnl_menuTab_BanHangLayout.setVerticalGroup(
-            pnl_menuTab_BanHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_menuTab_BanHangLayout.createSequentialGroup()
-                .addComponent(btn_tab_BanHang, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        pnl_FormBanHang.add(pnl_menuTab_BanHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1090, 60));
-
-        pnl_Main.add(pnl_FormBanHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
-
         pnl_FormSanPham.setBackground(new java.awt.Color(255, 255, 255));
         pnl_FormSanPham.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl_text_SanPham.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        lbl_text_SanPham.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         lbl_text_SanPham.setForeground(new java.awt.Color(0, 153, 204));
         lbl_text_SanPham.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_text_SanPham.setText("Sản Phẩm");
-        pnl_FormSanPham.add(lbl_text_SanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 50));
+        pnl_FormSanPham.add(lbl_text_SanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 30));
 
         pnl_menuTab_SanPham.setBackground(new java.awt.Color(255, 255, 255));
 
         btn_tab_SanPham.setBackground(new java.awt.Color(255, 255, 255));
-        btn_tab_SanPham.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        btn_tab_SanPham.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_SanPham.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_SanPham.setForeground(new java.awt.Color(0, 0, 0));
         btn_tab_SanPham.setText("Sản Phẩm");
         btn_tab_SanPham.setBorder(null);
         btn_tab_SanPham.setContentAreaFilled(false);
+        btn_tab_SanPham.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_SanPhamMouseClicked(evt);
+            }
+        });
         btn_tab_SanPham.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tab_SanPhamActionPerformed(evt);
@@ -525,18 +551,28 @@ public class GD_Chinh extends javax.swing.JFrame {
         });
 
         btn_tab_LoaiSanPham.setBackground(new java.awt.Color(255, 255, 255));
-        btn_tab_LoaiSanPham.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        btn_tab_LoaiSanPham.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         btn_tab_LoaiSanPham.setForeground(new java.awt.Color(153, 153, 153));
         btn_tab_LoaiSanPham.setText("Loại Sản Phẩm");
         btn_tab_LoaiSanPham.setBorder(null);
         btn_tab_LoaiSanPham.setContentAreaFilled(false);
+        btn_tab_LoaiSanPham.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_LoaiSanPhamMouseClicked(evt);
+            }
+        });
 
         btn_tab_NhaCungCap.setBackground(new java.awt.Color(255, 255, 255));
-        btn_tab_NhaCungCap.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        btn_tab_NhaCungCap.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         btn_tab_NhaCungCap.setForeground(new java.awt.Color(153, 153, 153));
         btn_tab_NhaCungCap.setText("Nhà Cung Cấp");
         btn_tab_NhaCungCap.setBorder(null);
         btn_tab_NhaCungCap.setContentAreaFilled(false);
+        btn_tab_NhaCungCap.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_NhaCungCapMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_menuTab_SanPhamLayout = new javax.swing.GroupLayout(pnl_menuTab_SanPham);
         pnl_menuTab_SanPham.setLayout(pnl_menuTab_SanPhamLayout);
@@ -549,7 +585,7 @@ public class GD_Chinh extends javax.swing.JFrame {
                 .addComponent(btn_tab_LoaiSanPham)
                 .addGap(45, 45, 45)
                 .addComponent(btn_tab_NhaCungCap)
-                .addContainerGap(657, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_menuTab_SanPhamLayout.setVerticalGroup(
             pnl_menuTab_SanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -561,64 +597,823 @@ public class GD_Chinh extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnl_FormSanPham.add(pnl_menuTab_SanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1090, 50));
+        pnl_FormSanPham.add(pnl_menuTab_SanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
+
+        pnl_tab_FormSanPham.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout pnl_tab_FormSanPhamLayout = new javax.swing.GroupLayout(pnl_tab_FormSanPham);
+        pnl_tab_FormSanPham.setLayout(pnl_tab_FormSanPhamLayout);
+        pnl_tab_FormSanPhamLayout.setHorizontalGroup(
+            pnl_tab_FormSanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormSanPhamLayout.setVerticalGroup(
+            pnl_tab_FormSanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormSanPham.add(pnl_tab_FormSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormLSanPham.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout pnl_tab_FormLSanPhamLayout = new javax.swing.GroupLayout(pnl_tab_FormLSanPham);
+        pnl_tab_FormLSanPham.setLayout(pnl_tab_FormLSanPhamLayout);
+        pnl_tab_FormLSanPhamLayout.setHorizontalGroup(
+            pnl_tab_FormLSanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormLSanPhamLayout.setVerticalGroup(
+            pnl_tab_FormLSanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormSanPham.add(pnl_tab_FormLSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormNhaCungCap.setBackground(new java.awt.Color(153, 153, 0));
+
+        javax.swing.GroupLayout pnl_tab_FormNhaCungCapLayout = new javax.swing.GroupLayout(pnl_tab_FormNhaCungCap);
+        pnl_tab_FormNhaCungCap.setLayout(pnl_tab_FormNhaCungCapLayout);
+        pnl_tab_FormNhaCungCapLayout.setHorizontalGroup(
+            pnl_tab_FormNhaCungCapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormNhaCungCapLayout.setVerticalGroup(
+            pnl_tab_FormNhaCungCapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormSanPham.add(pnl_tab_FormNhaCungCap, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_Main.add(pnl_FormSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
 
         pnl_FormKhachHang.setBackground(new java.awt.Color(255, 255, 255));
         pnl_FormKhachHang.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl_text_KhachHang.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        lbl_text_KhachHang.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         lbl_text_KhachHang.setForeground(new java.awt.Color(0, 153, 204));
         lbl_text_KhachHang.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_text_KhachHang.setText("Khách Hàng");
-        pnl_FormKhachHang.add(lbl_text_KhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 50));
+        pnl_FormKhachHang.add(lbl_text_KhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 30));
+
+        pnl_menuTab_KhachHang.setBackground(new java.awt.Color(255, 255, 255));
+
+        btn_tab_KhachHang.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_KhachHang.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_KhachHang.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tab_KhachHang.setText("Thông Tin Khách Hàng");
+        btn_tab_KhachHang.setBorder(null);
+        btn_tab_KhachHang.setContentAreaFilled(false);
+        btn_tab_KhachHang.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_KhachHangMouseClicked(evt);
+            }
+        });
+        btn_tab_KhachHang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tab_KhachHangActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_menuTab_KhachHangLayout = new javax.swing.GroupLayout(pnl_menuTab_KhachHang);
+        pnl_menuTab_KhachHang.setLayout(pnl_menuTab_KhachHangLayout);
+        pnl_menuTab_KhachHangLayout.setHorizontalGroup(
+            pnl_menuTab_KhachHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_menuTab_KhachHangLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(btn_tab_KhachHang)
+                .addContainerGap(870, Short.MAX_VALUE))
+        );
+        pnl_menuTab_KhachHangLayout.setVerticalGroup(
+            pnl_menuTab_KhachHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btn_tab_KhachHang, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        pnl_FormKhachHang.add(pnl_menuTab_KhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
+
+        pnl_tab_FormKhachHang.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout pnl_tab_FormKhachHangLayout = new javax.swing.GroupLayout(pnl_tab_FormKhachHang);
+        pnl_tab_FormKhachHang.setLayout(pnl_tab_FormKhachHangLayout);
+        pnl_tab_FormKhachHangLayout.setHorizontalGroup(
+            pnl_tab_FormKhachHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormKhachHangLayout.setVerticalGroup(
+            pnl_tab_FormKhachHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormKhachHang.add(pnl_tab_FormKhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_Main.add(pnl_FormKhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
 
         pnl_FormNhanVien.setBackground(new java.awt.Color(255, 255, 255));
         pnl_FormNhanVien.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl_text_NhanVien.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        lbl_text_NhanVien.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         lbl_text_NhanVien.setForeground(new java.awt.Color(0, 153, 204));
         lbl_text_NhanVien.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_text_NhanVien.setText("Nhân Viên");
-        pnl_FormNhanVien.add(lbl_text_NhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 50));
+        pnl_FormNhanVien.add(lbl_text_NhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 30));
+
+        pnl_menuTab_NhanVien.setBackground(new java.awt.Color(255, 255, 255));
+
+        btn_tab_NV.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_NV.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_NV.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tab_NV.setText("Thông Tin Nhân Viên");
+        btn_tab_NV.setBorder(null);
+        btn_tab_NV.setContentAreaFilled(false);
+        btn_tab_NV.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_NVMouseClicked(evt);
+            }
+        });
+        btn_tab_NV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tab_NVActionPerformed(evt);
+            }
+        });
+
+        btn_tab_CaLam.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_CaLam.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_CaLam.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_CaLam.setText("Ca Làm");
+        btn_tab_CaLam.setBorder(null);
+        btn_tab_CaLam.setContentAreaFilled(false);
+        btn_tab_CaLam.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_CaLamMouseClicked(evt);
+            }
+        });
+
+        btn_tab_Luong.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_Luong.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_Luong.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_Luong.setText("Lương");
+        btn_tab_Luong.setBorder(null);
+        btn_tab_Luong.setContentAreaFilled(false);
+        btn_tab_Luong.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_LuongMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_menuTab_NhanVienLayout = new javax.swing.GroupLayout(pnl_menuTab_NhanVien);
+        pnl_menuTab_NhanVien.setLayout(pnl_menuTab_NhanVienLayout);
+        pnl_menuTab_NhanVienLayout.setHorizontalGroup(
+            pnl_menuTab_NhanVienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_menuTab_NhanVienLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(btn_tab_NV)
+                .addGap(44, 44, 44)
+                .addComponent(btn_tab_CaLam)
+                .addGap(45, 45, 45)
+                .addComponent(btn_tab_Luong)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pnl_menuTab_NhanVienLayout.setVerticalGroup(
+            pnl_menuTab_NhanVienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_menuTab_NhanVienLayout.createSequentialGroup()
+                .addGroup(pnl_menuTab_NhanVienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_tab_NV, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                    .addComponent(btn_tab_CaLam, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_tab_Luong, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        pnl_FormNhanVien.add(pnl_menuTab_NhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
+
+        pnl_tab_FormTTNhanVien.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout pnl_tab_FormTTNhanVienLayout = new javax.swing.GroupLayout(pnl_tab_FormTTNhanVien);
+        pnl_tab_FormTTNhanVien.setLayout(pnl_tab_FormTTNhanVienLayout);
+        pnl_tab_FormTTNhanVienLayout.setHorizontalGroup(
+            pnl_tab_FormTTNhanVienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormTTNhanVienLayout.setVerticalGroup(
+            pnl_tab_FormTTNhanVienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormNhanVien.add(pnl_tab_FormTTNhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormCaLam.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout pnl_tab_FormCaLamLayout = new javax.swing.GroupLayout(pnl_tab_FormCaLam);
+        pnl_tab_FormCaLam.setLayout(pnl_tab_FormCaLamLayout);
+        pnl_tab_FormCaLamLayout.setHorizontalGroup(
+            pnl_tab_FormCaLamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormCaLamLayout.setVerticalGroup(
+            pnl_tab_FormCaLamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormNhanVien.add(pnl_tab_FormCaLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormLuong.setBackground(new java.awt.Color(153, 153, 0));
+
+        javax.swing.GroupLayout pnl_tab_FormLuongLayout = new javax.swing.GroupLayout(pnl_tab_FormLuong);
+        pnl_tab_FormLuong.setLayout(pnl_tab_FormLuongLayout);
+        pnl_tab_FormLuongLayout.setHorizontalGroup(
+            pnl_tab_FormLuongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormLuongLayout.setVerticalGroup(
+            pnl_tab_FormLuongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormNhanVien.add(pnl_tab_FormLuong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_Main.add(pnl_FormNhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
 
         pnl_FormTimKiem.setBackground(new java.awt.Color(255, 255, 255));
         pnl_FormTimKiem.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl_text_TimKiem.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        lbl_text_TimKiem.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         lbl_text_TimKiem.setForeground(new java.awt.Color(0, 153, 204));
         lbl_text_TimKiem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_text_TimKiem.setText("Tìm Kiếm");
-        pnl_FormTimKiem.add(lbl_text_TimKiem, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 50));
+        pnl_FormTimKiem.add(lbl_text_TimKiem, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 30));
+
+        pnl_menuTab_TimKiem.setBackground(new java.awt.Color(255, 255, 255));
+
+        btn_tab_TKnv.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKnv.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKnv.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tab_TKnv.setText("Tìm Kiếm Nhân Viên");
+        btn_tab_TKnv.setBorder(null);
+        btn_tab_TKnv.setContentAreaFilled(false);
+        btn_tab_TKnv.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TKnvMouseClicked(evt);
+            }
+        });
+        btn_tab_TKnv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tab_TKnvActionPerformed(evt);
+            }
+        });
+
+        btn_tab_TKkh.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKkh.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKkh.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_TKkh.setText("Tìm Kiếm Khách Hàng");
+        btn_tab_TKkh.setBorder(null);
+        btn_tab_TKkh.setContentAreaFilled(false);
+        btn_tab_TKkh.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TKkhMouseClicked(evt);
+            }
+        });
+
+        btn_tab_TKsp.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKsp.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKsp.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_TKsp.setText("Tìm Kiếm Sản Phẩm");
+        btn_tab_TKsp.setBorder(null);
+        btn_tab_TKsp.setContentAreaFilled(false);
+        btn_tab_TKsp.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TKspMouseClicked(evt);
+            }
+        });
+
+        btn_tab_TKsp1.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKsp1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKsp1.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_TKsp1.setText("Tìm Kiếm Nhà Cung Cấp");
+        btn_tab_TKsp1.setBorder(null);
+        btn_tab_TKsp1.setContentAreaFilled(false);
+        btn_tab_TKsp1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TKsp1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_menuTab_TimKiemLayout = new javax.swing.GroupLayout(pnl_menuTab_TimKiem);
+        pnl_menuTab_TimKiem.setLayout(pnl_menuTab_TimKiemLayout);
+        pnl_menuTab_TimKiemLayout.setHorizontalGroup(
+            pnl_menuTab_TimKiemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_menuTab_TimKiemLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(btn_tab_TKnv)
+                .addGap(44, 44, 44)
+                .addComponent(btn_tab_TKkh)
+                .addGap(45, 45, 45)
+                .addComponent(btn_tab_TKsp)
+                .addGap(43, 43, 43)
+                .addComponent(btn_tab_TKsp1)
+                .addContainerGap(294, Short.MAX_VALUE))
+        );
+        pnl_menuTab_TimKiemLayout.setVerticalGroup(
+            pnl_menuTab_TimKiemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_menuTab_TimKiemLayout.createSequentialGroup()
+                .addGroup(pnl_menuTab_TimKiemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_tab_TKsp1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_tab_TKnv, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                    .addComponent(btn_tab_TKkh, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_tab_TKsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        pnl_FormTimKiem.add(pnl_menuTab_TimKiem, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
+
+        btn_tab_TKncc.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout btn_tab_TKnccLayout = new javax.swing.GroupLayout(btn_tab_TKncc);
+        btn_tab_TKncc.setLayout(btn_tab_TKnccLayout);
+        btn_tab_TKnccLayout.setHorizontalGroup(
+            btn_tab_TKnccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        btn_tab_TKnccLayout.setVerticalGroup(
+            btn_tab_TKnccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormTimKiem.add(btn_tab_TKncc, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormTKKH.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout pnl_tab_FormTKKHLayout = new javax.swing.GroupLayout(pnl_tab_FormTKKH);
+        pnl_tab_FormTKKH.setLayout(pnl_tab_FormTKKHLayout);
+        pnl_tab_FormTKKHLayout.setHorizontalGroup(
+            pnl_tab_FormTKKHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormTKKHLayout.setVerticalGroup(
+            pnl_tab_FormTKKHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormTimKiem.add(pnl_tab_FormTKKH, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormTKSP.setBackground(new java.awt.Color(153, 153, 0));
+
+        javax.swing.GroupLayout pnl_tab_FormTKSPLayout = new javax.swing.GroupLayout(pnl_tab_FormTKSP);
+        pnl_tab_FormTKSP.setLayout(pnl_tab_FormTKSPLayout);
+        pnl_tab_FormTKSPLayout.setHorizontalGroup(
+            pnl_tab_FormTKSPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormTKSPLayout.setVerticalGroup(
+            pnl_tab_FormTKSPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormTimKiem.add(pnl_tab_FormTKSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormTKNCC.setBackground(new java.awt.Color(153, 0, 51));
+
+        javax.swing.GroupLayout pnl_tab_FormTKNCCLayout = new javax.swing.GroupLayout(pnl_tab_FormTKNCC);
+        pnl_tab_FormTKNCC.setLayout(pnl_tab_FormTKNCCLayout);
+        pnl_tab_FormTKNCCLayout.setHorizontalGroup(
+            pnl_tab_FormTKNCCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormTKNCCLayout.setVerticalGroup(
+            pnl_tab_FormTKNCCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormTimKiem.add(pnl_tab_FormTKNCC, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_Main.add(pnl_FormTimKiem, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
 
         pnl_FormHeThong.setBackground(new java.awt.Color(255, 255, 255));
         pnl_FormHeThong.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl_text_HeThong.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        lbl_text_HeThong.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         lbl_text_HeThong.setForeground(new java.awt.Color(0, 153, 204));
         lbl_text_HeThong.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_text_HeThong.setText("Hệ Thống");
-        pnl_FormHeThong.add(lbl_text_HeThong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 50));
+        pnl_FormHeThong.add(lbl_text_HeThong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 30));
+
+        pnl_menuTab_HeThong.setBackground(new java.awt.Color(255, 255, 255));
+
+        btn_tab_HeThong.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_HeThong.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_HeThong.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tab_HeThong.setText("Phân Quyền Người Dùng");
+        btn_tab_HeThong.setBorder(null);
+        btn_tab_HeThong.setContentAreaFilled(false);
+        btn_tab_HeThong.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_HeThongMouseClicked(evt);
+            }
+        });
+        btn_tab_HeThong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tab_HeThongActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_menuTab_HeThongLayout = new javax.swing.GroupLayout(pnl_menuTab_HeThong);
+        pnl_menuTab_HeThong.setLayout(pnl_menuTab_HeThongLayout);
+        pnl_menuTab_HeThongLayout.setHorizontalGroup(
+            pnl_menuTab_HeThongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_menuTab_HeThongLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(btn_tab_HeThong)
+                .addContainerGap(853, Short.MAX_VALUE))
+        );
+        pnl_menuTab_HeThongLayout.setVerticalGroup(
+            pnl_menuTab_HeThongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btn_tab_HeThong, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        pnl_FormHeThong.add(pnl_menuTab_HeThong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
+
+        pnl_tab_FormHeThong.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout pnl_tab_FormHeThongLayout = new javax.swing.GroupLayout(pnl_tab_FormHeThong);
+        pnl_tab_FormHeThong.setLayout(pnl_tab_FormHeThongLayout);
+        pnl_tab_FormHeThongLayout.setHorizontalGroup(
+            pnl_tab_FormHeThongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormHeThongLayout.setVerticalGroup(
+            pnl_tab_FormHeThongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormHeThong.add(pnl_tab_FormHeThong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_Main.add(pnl_FormHeThong, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
 
         pnl_FormThongKe.setBackground(new java.awt.Color(255, 255, 255));
         pnl_FormThongKe.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl_text_ThongKe.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        lbl_text_ThongKe.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
         lbl_text_ThongKe.setForeground(new java.awt.Color(0, 153, 204));
         lbl_text_ThongKe.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_text_ThongKe.setText("Thông Kê");
-        pnl_FormThongKe.add(lbl_text_ThongKe, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 50));
+        lbl_text_ThongKe.setText("Thống Kê");
+        pnl_FormThongKe.add(lbl_text_ThongKe, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 30));
+
+        pnl_menuTab_ThongKe.setBackground(new java.awt.Color(255, 255, 255));
+
+        btn_tab_TKeDT.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKeDT.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKeDT.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tab_TKeDT.setText("Thống Kê Doanh Thu");
+        btn_tab_TKeDT.setBorder(null);
+        btn_tab_TKeDT.setContentAreaFilled(false);
+        btn_tab_TKeDT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TKeDTMouseClicked(evt);
+            }
+        });
+        btn_tab_TKeDT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tab_TKeDTActionPerformed(evt);
+            }
+        });
+
+        btn_tab_TKeHT.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKeHT.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKeHT.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_TKeHT.setText("Thống Kê Hàng Tồn Kho");
+        btn_tab_TKeHT.setBorder(null);
+        btn_tab_TKeHT.setContentAreaFilled(false);
+        btn_tab_TKeHT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TKeHTMouseClicked(evt);
+            }
+        });
+
+        btn_tab_TKeHBC.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKeHBC.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKeHBC.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_TKeHBC.setText("Thống Kê Hàng Bán Chạy");
+        btn_tab_TKeHBC.setBorder(null);
+        btn_tab_TKeHBC.setContentAreaFilled(false);
+        btn_tab_TKeHBC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TKeHBCMouseClicked(evt);
+            }
+        });
+
+        btn_tab_TKeKH.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKeKH.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKeKH.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_TKeKH.setText("Thông Kê Khách Hàng");
+        btn_tab_TKeKH.setBorder(null);
+        btn_tab_TKeKH.setContentAreaFilled(false);
+        btn_tab_TKeKH.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TKeKHMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_menuTab_ThongKeLayout = new javax.swing.GroupLayout(pnl_menuTab_ThongKe);
+        pnl_menuTab_ThongKe.setLayout(pnl_menuTab_ThongKeLayout);
+        pnl_menuTab_ThongKeLayout.setHorizontalGroup(
+            pnl_menuTab_ThongKeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_menuTab_ThongKeLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(btn_tab_TKeDT)
+                .addGap(44, 44, 44)
+                .addComponent(btn_tab_TKeHT)
+                .addGap(45, 45, 45)
+                .addComponent(btn_tab_TKeHBC)
+                .addGap(43, 43, 43)
+                .addComponent(btn_tab_TKeKH)
+                .addContainerGap(250, Short.MAX_VALUE))
+        );
+        pnl_menuTab_ThongKeLayout.setVerticalGroup(
+            pnl_menuTab_ThongKeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_menuTab_ThongKeLayout.createSequentialGroup()
+                .addGroup(pnl_menuTab_ThongKeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_tab_TKeKH, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_tab_TKeDT, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                    .addComponent(btn_tab_TKeHT, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_tab_TKeHBC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        pnl_FormThongKe.add(pnl_menuTab_ThongKe, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
+
+        btn_tab_TKedt.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout btn_tab_TKedtLayout = new javax.swing.GroupLayout(btn_tab_TKedt);
+        btn_tab_TKedt.setLayout(btn_tab_TKedtLayout);
+        btn_tab_TKedtLayout.setHorizontalGroup(
+            btn_tab_TKedtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        btn_tab_TKedtLayout.setVerticalGroup(
+            btn_tab_TKedtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormThongKe.add(btn_tab_TKedt, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormTKeht.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout pnl_tab_FormTKehtLayout = new javax.swing.GroupLayout(pnl_tab_FormTKeht);
+        pnl_tab_FormTKeht.setLayout(pnl_tab_FormTKehtLayout);
+        pnl_tab_FormTKehtLayout.setHorizontalGroup(
+            pnl_tab_FormTKehtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormTKehtLayout.setVerticalGroup(
+            pnl_tab_FormTKehtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormThongKe.add(pnl_tab_FormTKeht, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormTKhbc.setBackground(new java.awt.Color(153, 153, 0));
+
+        javax.swing.GroupLayout pnl_tab_FormTKhbcLayout = new javax.swing.GroupLayout(pnl_tab_FormTKhbc);
+        pnl_tab_FormTKhbc.setLayout(pnl_tab_FormTKhbcLayout);
+        pnl_tab_FormTKhbcLayout.setHorizontalGroup(
+            pnl_tab_FormTKhbcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormTKhbcLayout.setVerticalGroup(
+            pnl_tab_FormTKhbcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormThongKe.add(pnl_tab_FormTKhbc, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_FormTKkh.setBackground(new java.awt.Color(153, 0, 51));
+
+        javax.swing.GroupLayout pnl_tab_FormTKkhLayout = new javax.swing.GroupLayout(pnl_tab_FormTKkh);
+        pnl_tab_FormTKkh.setLayout(pnl_tab_FormTKkhLayout);
+        pnl_tab_FormTKkhLayout.setHorizontalGroup(
+            pnl_tab_FormTKkhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormTKkhLayout.setVerticalGroup(
+            pnl_tab_FormTKkhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormThongKe.add(pnl_tab_FormTKkh, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_Main.add(pnl_FormThongKe, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
+
+        pnl_FormTTTaiKhoan.setBackground(new java.awt.Color(255, 255, 255));
+        pnl_FormTTTaiKhoan.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lbl_text_TTTK.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
+        lbl_text_TTTK.setForeground(new java.awt.Color(0, 153, 204));
+        lbl_text_TTTK.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_text_TTTK.setText("Thông Tin Tài Khoản");
+        pnl_FormTTTaiKhoan.add(lbl_text_TTTK, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 30));
+
+        pnl_menuTab_TTTK.setBackground(new java.awt.Color(255, 255, 255));
+
+        btn_tab_TTTK.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TTTK.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TTTK.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tab_TTTK.setText("Thông Tin Tài Khoản");
+        btn_tab_TTTK.setBorder(null);
+        btn_tab_TTTK.setContentAreaFilled(false);
+        btn_tab_TTTK.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_TTTKMouseClicked(evt);
+            }
+        });
+        btn_tab_TTTK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tab_TTTKActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_menuTab_TTTKLayout = new javax.swing.GroupLayout(pnl_menuTab_TTTK);
+        pnl_menuTab_TTTK.setLayout(pnl_menuTab_TTTKLayout);
+        pnl_menuTab_TTTKLayout.setHorizontalGroup(
+            pnl_menuTab_TTTKLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_menuTab_TTTKLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(btn_tab_TTTK)
+                .addContainerGap(886, Short.MAX_VALUE))
+        );
+        pnl_menuTab_TTTKLayout.setVerticalGroup(
+            pnl_menuTab_TTTKLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btn_tab_TTTK, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        pnl_FormTTTaiKhoan.add(pnl_menuTab_TTTK, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
+
+        pnl_tab_FormTTTK.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout pnl_tab_FormTTTKLayout = new javax.swing.GroupLayout(pnl_tab_FormTTTK);
+        pnl_tab_FormTTTK.setLayout(pnl_tab_FormTTTKLayout);
+        pnl_tab_FormTTTKLayout.setHorizontalGroup(
+            pnl_tab_FormTTTKLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_FormTTTKLayout.setVerticalGroup(
+            pnl_tab_FormTTTKLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormTTTaiKhoan.add(pnl_tab_FormTTTK, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_Main.add(pnl_FormTTTaiKhoan, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
+
+        pnl_FormBanHang.setBackground(new java.awt.Color(255, 255, 255));
+        pnl_FormBanHang.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lbl_text_BanHang.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
+        lbl_text_BanHang.setForeground(new java.awt.Color(0, 153, 204));
+        lbl_text_BanHang.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_text_BanHang.setText("Bán Hàng");
+        pnl_FormBanHang.add(lbl_text_BanHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 138, 30));
+
+        pnl_menuTab_BanHang.setBackground(new java.awt.Color(255, 255, 255));
+
+        btn_tab_1.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_1.setForeground(new java.awt.Color(0, 0, 0));
+        btn_tab_1.setText("Tab 1");
+        btn_tab_1.setBorder(null);
+        btn_tab_1.setContentAreaFilled(false);
+        btn_tab_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_1MouseClicked(evt);
+            }
+        });
+        btn_tab_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tab_1ActionPerformed(evt);
+            }
+        });
+
+        btn_tab_2.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_2.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_2.setText("Tab2");
+        btn_tab_2.setBorder(null);
+        btn_tab_2.setContentAreaFilled(false);
+        btn_tab_2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_2MouseClicked(evt);
+            }
+        });
+
+        btn_tab_3.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_3.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_3.setText("Tab3");
+        btn_tab_3.setBorder(null);
+        btn_tab_3.setContentAreaFilled(false);
+        btn_tab_3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_3MouseClicked(evt);
+            }
+        });
+
+        btn_tab_4.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_4.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_4.setText("Tab4");
+        btn_tab_4.setBorder(null);
+        btn_tab_4.setContentAreaFilled(false);
+        btn_tab_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tab_4MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_menuTab_BanHangLayout = new javax.swing.GroupLayout(pnl_menuTab_BanHang);
+        pnl_menuTab_BanHang.setLayout(pnl_menuTab_BanHangLayout);
+        pnl_menuTab_BanHangLayout.setHorizontalGroup(
+            pnl_menuTab_BanHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_menuTab_BanHangLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(btn_tab_1)
+                .addGap(44, 44, 44)
+                .addComponent(btn_tab_2)
+                .addGap(45, 45, 45)
+                .addComponent(btn_tab_3)
+                .addGap(43, 43, 43)
+                .addComponent(btn_tab_4)
+                .addContainerGap(756, Short.MAX_VALUE))
+        );
+        pnl_menuTab_BanHangLayout.setVerticalGroup(
+            pnl_menuTab_BanHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_menuTab_BanHangLayout.createSequentialGroup()
+                .addGroup(pnl_menuTab_BanHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_tab_4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_tab_1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                    .addComponent(btn_tab_2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_tab_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        pnl_FormBanHang.add(pnl_menuTab_BanHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
+
+        btn_tab_sp1.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout btn_tab_sp1Layout = new javax.swing.GroupLayout(btn_tab_sp1);
+        btn_tab_sp1.setLayout(btn_tab_sp1Layout);
+        btn_tab_sp1Layout.setHorizontalGroup(
+            btn_tab_sp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        btn_tab_sp1Layout.setVerticalGroup(
+            btn_tab_sp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+
+        pnl_FormBanHang.add(btn_tab_sp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_sp2.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout pnl_tab_sp2Layout = new javax.swing.GroupLayout(pnl_tab_sp2);
+        pnl_tab_sp2.setLayout(pnl_tab_sp2Layout);
+        pnl_tab_sp2Layout.setHorizontalGroup(
+            pnl_tab_sp2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_sp2Layout.setVerticalGroup(
+            pnl_tab_sp2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormBanHang.add(pnl_tab_sp2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_sp3.setBackground(new java.awt.Color(153, 153, 0));
+
+        javax.swing.GroupLayout pnl_tab_sp3Layout = new javax.swing.GroupLayout(pnl_tab_sp3);
+        pnl_tab_sp3.setLayout(pnl_tab_sp3Layout);
+        pnl_tab_sp3Layout.setHorizontalGroup(
+            pnl_tab_sp3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_sp3Layout.setVerticalGroup(
+            pnl_tab_sp3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormBanHang.add(pnl_tab_sp3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_tab_sp4.setBackground(new java.awt.Color(153, 0, 51));
+
+        javax.swing.GroupLayout pnl_tab_sp4Layout = new javax.swing.GroupLayout(pnl_tab_sp4);
+        pnl_tab_sp4.setLayout(pnl_tab_sp4Layout);
+        pnl_tab_sp4Layout.setHorizontalGroup(
+            pnl_tab_sp4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1300, Short.MAX_VALUE)
+        );
+        pnl_tab_sp4Layout.setVerticalGroup(
+            pnl_tab_sp4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+
+        pnl_FormBanHang.add(pnl_tab_sp4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+
+        pnl_Main.add(pnl_FormBanHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -639,24 +1434,35 @@ public class GD_Chinh extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     public void addBorder(){
-        buttons = new JButton[3];
+        buttons = new JButton[6];
         buttons[0] = btn_tab_SanPham;
         buttons[1] = btn_tab_LoaiSanPham;
         buttons[2] = btn_tab_NhaCungCap;
+//        buttons[3] =btn_tab_KhachHang;
+        buttons[3] =btn_tab_NV;
+        buttons[4] =btn_tab_CaLam;
+        buttons[5] = btn_tab_Luong;
         
-        for (JButton button : buttons) {
-            button.setBorder(default_border);
-        }
         setButtonBorder(btn_tab_SanPham);
+        setButtonBorder(btn_tab_NV);
+        setButtonBorder(btn_tab_KhachHang);
+        
+
+        
+        
+//        for (JButton button : buttons) {
+//            button.setBorder(default_border);
+//        }
+        
         addAction();
     }
     
     //set border active
     public void setButtonBorder(JButton button){
-        for (JButton btn : buttons) {
-            btn.setBorder(default_border);
-            btn.setForeground(new Color(153,153,153));
-        }
+//        for (JButton btn : buttons) {
+//            btn.setBorder(default_border);
+//            btn.setForeground(new Color(153,153,153));
+//        }
         button.setBorder(active_border);
         button.setForeground(Color.black);
     }
@@ -666,7 +1472,12 @@ public class GD_Chinh extends javax.swing.JFrame {
             button.addMouseListener(new MouseListener() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                    setButtonBorder(button);
+                    for (JButton btn : buttons) {
+            btn.setBorder(default_border);
+            btn.setForeground(new Color(153,153,153));
+        }
+        button.setBorder(active_border);
+        button.setForeground(Color.black);
                 }
 
                 @Override
@@ -702,6 +1513,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_FormTimKiem.setVisible(false);
         pnl_FormHeThong.setVisible(false);
         pnl_FormThongKe.setVisible(false);
+       pnl_FormTTTaiKhoan.setVisible(false);
         
         pnl_button_TongQuan.setBackground(Color.white);
         pnl_button_BanHang.setBackground(new Color(153,204,255));
@@ -727,6 +1539,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_FormTimKiem.setVisible(false);
         pnl_FormHeThong.setVisible(false);
         pnl_FormThongKe.setVisible(false);
+         pnl_FormTTTaiKhoan.setVisible(false);
         
         pnl_button_TongQuan.setBackground(new Color(153,204,255));
         pnl_button_BanHang.setBackground(Color.white);
@@ -748,6 +1561,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_FormTimKiem.setVisible(false);
         pnl_FormHeThong.setVisible(false);
         pnl_FormThongKe.setVisible(false);
+         pnl_FormTTTaiKhoan.setVisible(false);
         
         pnl_button_TongQuan.setBackground(new Color(153,204,255));
         pnl_button_BanHang.setBackground(new Color(153,204,255));
@@ -769,6 +1583,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_FormTimKiem.setVisible(false);
         pnl_FormHeThong.setVisible(false);
         pnl_FormThongKe.setVisible(false);
+         pnl_FormTTTaiKhoan.setVisible(false);
         
         pnl_button_TongQuan.setBackground(new Color(153,204,255));
         pnl_button_BanHang.setBackground(new Color(153,204,255));
@@ -790,6 +1605,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_FormTimKiem.setVisible(false);
         pnl_FormHeThong.setVisible(false);
         pnl_FormThongKe.setVisible(false);
+         pnl_FormTTTaiKhoan.setVisible(false);
         
         pnl_button_TongQuan.setBackground(new Color(153,204,255));
         pnl_button_BanHang.setBackground(new Color(153,204,255));
@@ -811,6 +1627,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_FormTimKiem.setVisible(true);
         pnl_FormHeThong.setVisible(false);
         pnl_FormThongKe.setVisible(false);
+         pnl_FormTTTaiKhoan.setVisible(false);
         
         pnl_button_TongQuan.setBackground(new Color(153,204,255));
         pnl_button_BanHang.setBackground(new Color(153,204,255));
@@ -832,6 +1649,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_FormTimKiem.setVisible(false);
         pnl_FormHeThong.setVisible(true);
         pnl_FormThongKe.setVisible(false);
+         pnl_FormTTTaiKhoan.setVisible(false);
         
         pnl_button_TongQuan.setBackground(new Color(153,204,255));
         pnl_button_BanHang.setBackground(new Color(153,204,255));
@@ -853,6 +1671,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_FormTimKiem.setVisible(false);
         pnl_FormHeThong.setVisible(false);
         pnl_FormThongKe.setVisible(true);
+         pnl_FormTTTaiKhoan.setVisible(false);
         
         pnl_button_TongQuan.setBackground(new Color(153,204,255));
         pnl_button_BanHang.setBackground(new Color(153,204,255));
@@ -864,13 +1683,162 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_button_ThongKe.setBackground(Color.white);
     }//GEN-LAST:event_pnl_button_ThongKeMouseClicked
 
-    private void btn_tab_BanHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_BanHangActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tab_BanHangActionPerformed
-
     private void btn_tab_SanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_SanPhamActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_tab_SanPhamActionPerformed
+
+    private void btn_tab_SanPhamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_SanPhamMouseClicked
+        // TODO add your handling code here:
+        pnl_tab_FormSanPham.setVisible(true);
+        pnl_tab_FormLSanPham.setVisible(false);
+        pnl_tab_FormNhaCungCap.setVisible(false);
+    }//GEN-LAST:event_btn_tab_SanPhamMouseClicked
+
+    private void btn_tab_LoaiSanPhamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_LoaiSanPhamMouseClicked
+        // TODO add your handling code here:
+        pnl_tab_FormSanPham.setVisible(false);
+        pnl_tab_FormLSanPham.setVisible(true);
+        pnl_tab_FormNhaCungCap.setVisible(false);
+    }//GEN-LAST:event_btn_tab_LoaiSanPhamMouseClicked
+
+    private void btn_tab_NhaCungCapMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_NhaCungCapMouseClicked
+        // TODO add your handling code here:
+        pnl_tab_FormSanPham.setVisible(false);
+        pnl_tab_FormLSanPham.setVisible(false);
+        pnl_tab_FormNhaCungCap.setVisible(true);
+    }//GEN-LAST:event_btn_tab_NhaCungCapMouseClicked
+
+    private void btn_tab_KhachHangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_KhachHangMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_KhachHangMouseClicked
+
+    private void btn_tab_KhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_KhachHangActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_KhachHangActionPerformed
+
+    private void btn_tab_NVMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_NVMouseClicked
+        // TODO add your handling code here:
+        pnl_tab_FormTTNhanVien.setVisible(true);
+        pnl_tab_FormCaLam.setVisible(false);
+        pnl_tab_FormLuong.setVisible(false);
+    }//GEN-LAST:event_btn_tab_NVMouseClicked
+
+    private void btn_tab_NVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_NVActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_NVActionPerformed
+
+    private void btn_tab_CaLamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_CaLamMouseClicked
+        // TODO add your handling code here:
+        pnl_tab_FormTTNhanVien.setVisible(false);
+        pnl_tab_FormCaLam.setVisible(true);
+        pnl_tab_FormLuong.setVisible(false);
+    }//GEN-LAST:event_btn_tab_CaLamMouseClicked
+
+    private void btn_tab_LuongMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_LuongMouseClicked
+        // TODO add your handling code here:
+        pnl_tab_FormTTNhanVien.setVisible(false);
+        pnl_tab_FormCaLam.setVisible(false);
+        pnl_tab_FormLuong.setVisible(true);
+    }//GEN-LAST:event_btn_tab_LuongMouseClicked
+
+    private void btn_tab_TKnvMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKnvMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKnvMouseClicked
+
+    private void btn_tab_TKnvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_TKnvActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKnvActionPerformed
+
+    private void btn_tab_TKkhMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKkhMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKkhMouseClicked
+
+    private void btn_tab_TKspMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKspMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKspMouseClicked
+
+    private void btn_tab_TKsp1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKsp1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKsp1MouseClicked
+
+    private void btn_tab_HeThongMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_HeThongMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_HeThongMouseClicked
+
+    private void btn_tab_HeThongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_HeThongActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_HeThongActionPerformed
+
+    private void btn_tab_TKeDTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKeDTMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKeDTMouseClicked
+
+    private void btn_tab_TKeDTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_TKeDTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKeDTActionPerformed
+
+    private void btn_tab_TKeHTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKeHTMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKeHTMouseClicked
+
+    private void btn_tab_TKeHBCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKeHBCMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKeHBCMouseClicked
+
+    private void btn_tab_TKeKHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKeKHMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TKeKHMouseClicked
+
+    private void btn_tab_TTTKMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TTTKMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TTTKMouseClicked
+
+    private void btn_tab_TTTKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_TTTKActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_TTTKActionPerformed
+
+    private void pnl_ThongTinTaiKhoanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl_ThongTinTaiKhoanMouseClicked
+        // TODO add your handling code here:
+         pnl_FormTongQuan.setVisible(false);
+        pnl_FormBanHang.setVisible(false);
+        pnl_FormSanPham.setVisible(false);
+        pnl_FormKhachHang.setVisible(false);
+        pnl_FormNhanVien.setVisible(false);
+        pnl_FormTimKiem.setVisible(false);
+        pnl_FormHeThong.setVisible(false);
+        pnl_FormThongKe.setVisible(false);
+         pnl_FormTTTaiKhoan.setVisible(true);
+         
+         pnl_button_TongQuan.setBackground(new Color(153,204,255));
+        pnl_button_BanHang.setBackground(new Color(153,204,255));
+        pnl_button_SanPham.setBackground( new Color(153,204,255));
+        pnl_button_KhachHang.setBackground(new Color(153,204,255));
+        pnl_button_NhanVien.setBackground(new Color(153,204,255));
+        pnl_button_TimKiem.setBackground(new Color(153,204,255));
+        pnl_button_HeThong.setBackground(new Color(153,204,255));
+        pnl_button_ThongKe.setBackground(new Color(153,204,255));
+        
+    }//GEN-LAST:event_pnl_ThongTinTaiKhoanMouseClicked
+
+    private void btn_tab_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_1MouseClicked
+
+    private void btn_tab_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_1ActionPerformed
+
+    private void btn_tab_2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_2MouseClicked
+
+    private void btn_tab_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_3MouseClicked
+
+    private void btn_tab_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tab_4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -908,10 +1876,30 @@ public class GD_Chinh extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_tab_BanHang;
+    private javax.swing.JButton btn_tab_1;
+    private javax.swing.JButton btn_tab_2;
+    private javax.swing.JButton btn_tab_3;
+    private javax.swing.JButton btn_tab_4;
+    private javax.swing.JButton btn_tab_CaLam;
+    private javax.swing.JButton btn_tab_HeThong;
+    private javax.swing.JButton btn_tab_KhachHang;
     private javax.swing.JButton btn_tab_LoaiSanPham;
+    private javax.swing.JButton btn_tab_Luong;
+    private javax.swing.JButton btn_tab_NV;
     private javax.swing.JButton btn_tab_NhaCungCap;
     private javax.swing.JButton btn_tab_SanPham;
+    private javax.swing.JButton btn_tab_TKeDT;
+    private javax.swing.JButton btn_tab_TKeHBC;
+    private javax.swing.JButton btn_tab_TKeHT;
+    private javax.swing.JButton btn_tab_TKeKH;
+    private javax.swing.JPanel btn_tab_TKedt;
+    private javax.swing.JButton btn_tab_TKkh;
+    private javax.swing.JPanel btn_tab_TKncc;
+    private javax.swing.JButton btn_tab_TKnv;
+    private javax.swing.JButton btn_tab_TKsp;
+    private javax.swing.JButton btn_tab_TKsp1;
+    private javax.swing.JButton btn_tab_TTTK;
+    private javax.swing.JPanel btn_tab_sp1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lbl_exit;
     private javax.swing.JLabel lbl_icon_TaiKhoan;
@@ -929,6 +1917,7 @@ public class GD_Chinh extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_text_KhachHang;
     private javax.swing.JLabel lbl_text_NhanVien;
     private javax.swing.JLabel lbl_text_SanPham;
+    private javax.swing.JLabel lbl_text_TTTK;
     private javax.swing.JLabel lbl_text_ThongKe;
     private javax.swing.JLabel lbl_text_TimKiem;
     private javax.swing.JLabel lbl_text_TongQuan;
@@ -946,6 +1935,7 @@ public class GD_Chinh extends javax.swing.JFrame {
     private javax.swing.JPanel pnl_FormKhachHang;
     private javax.swing.JPanel pnl_FormNhanVien;
     private javax.swing.JPanel pnl_FormSanPham;
+    private javax.swing.JPanel pnl_FormTTTaiKhoan;
     private javax.swing.JPanel pnl_FormThongKe;
     private javax.swing.JPanel pnl_FormTimKiem;
     private javax.swing.JPanel pnl_FormTongQuan;
@@ -964,6 +1954,30 @@ public class GD_Chinh extends javax.swing.JFrame {
     private javax.swing.JPanel pnl_button_TimKiem;
     private javax.swing.JPanel pnl_button_TongQuan;
     private javax.swing.JPanel pnl_menuTab_BanHang;
+    private javax.swing.JPanel pnl_menuTab_HeThong;
+    private javax.swing.JPanel pnl_menuTab_KhachHang;
+    private javax.swing.JPanel pnl_menuTab_NhanVien;
     private javax.swing.JPanel pnl_menuTab_SanPham;
+    private javax.swing.JPanel pnl_menuTab_TTTK;
+    private javax.swing.JPanel pnl_menuTab_ThongKe;
+    private javax.swing.JPanel pnl_menuTab_TimKiem;
+    private javax.swing.JPanel pnl_tab_FormCaLam;
+    private javax.swing.JPanel pnl_tab_FormHeThong;
+    private javax.swing.JPanel pnl_tab_FormKhachHang;
+    private javax.swing.JPanel pnl_tab_FormLSanPham;
+    private javax.swing.JPanel pnl_tab_FormLuong;
+    private javax.swing.JPanel pnl_tab_FormNhaCungCap;
+    private javax.swing.JPanel pnl_tab_FormSanPham;
+    private javax.swing.JPanel pnl_tab_FormTKKH;
+    private javax.swing.JPanel pnl_tab_FormTKNCC;
+    private javax.swing.JPanel pnl_tab_FormTKSP;
+    private javax.swing.JPanel pnl_tab_FormTKeht;
+    private javax.swing.JPanel pnl_tab_FormTKhbc;
+    private javax.swing.JPanel pnl_tab_FormTKkh;
+    private javax.swing.JPanel pnl_tab_FormTTNhanVien;
+    private javax.swing.JPanel pnl_tab_FormTTTK;
+    private javax.swing.JPanel pnl_tab_sp2;
+    private javax.swing.JPanel pnl_tab_sp3;
+    private javax.swing.JPanel pnl_tab_sp4;
     // End of variables declaration//GEN-END:variables
 }
