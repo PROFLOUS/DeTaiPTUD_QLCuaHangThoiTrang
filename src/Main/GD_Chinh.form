@@ -1316,7 +1316,7 @@
                           <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                           <Component id="btn_tab_TKsp" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                          <Component id="btn_tab_TKsp1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_tab_TKncc" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="294" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -1325,7 +1325,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="btn_tab_TKsp1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btn_tab_TKncc" alignment="0" max="32767" attributes="0"/>
                               <Component id="btn_tab_TKnv" alignment="0" pref="44" max="32767" attributes="0"/>
                               <Component id="btn_tab_TKkh" alignment="0" max="32767" attributes="0"/>
                               <Component id="btn_tab_TKsp" alignment="1" max="32767" attributes="0"/>
@@ -1400,7 +1400,7 @@
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_tab_TKspMouseClicked"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="btn_tab_TKsp1">
+                <Component class="javax.swing.JButton" name="btn_tab_TKncc">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1418,12 +1418,12 @@
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_tab_TKsp1MouseClicked"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_tab_TKnccMouseClicked"/>
                   </Events>
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="btn_tab_TKncc">
+            <Container class="javax.swing.JPanel" name="pnl_tab_Form_TKNV">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="99" red="0" type="rgb"/>
@@ -1801,7 +1801,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="btn_tab_TKedt">
+            <Container class="javax.swing.JPanel" name="pnl_tab_Form_TKedt">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="99" red="0" type="rgb"/>
@@ -2179,7 +2179,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="btn_tab_sp1">
+            <Container class="javax.swing.JPanel" name="pnl_tab_sp1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="99" red="0" type="rgb"/>

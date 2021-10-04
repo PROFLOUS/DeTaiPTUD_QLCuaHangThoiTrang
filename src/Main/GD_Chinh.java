@@ -41,6 +41,23 @@ public class GD_Chinh extends javax.swing.JFrame {
         btn_tab_KhachHang.setBorder(active_border);
         btn_tab_KhachHang.setForeground(Color.black);
         
+        btn_tab_1.setBorder(active_border);
+        btn_tab_1.setForeground(Color.black);
+        
+        btn_tab_HeThong.setBorder(active_border);
+        btn_tab_HeThong.setForeground(Color.black);
+        
+        btn_tab_TKeDT.setBorder(active_border);
+        btn_tab_TKeDT.setForeground(Color.black);
+        
+        btn_tab_TKnv.setBorder(active_border);
+        btn_tab_TKnv.setForeground(Color.black);
+        
+        btn_tab_TTTK.setBorder(active_border);
+        btn_tab_TTTK.setForeground(Color.black);
+        
+        
+        
         addBorder();
         
     }
@@ -121,8 +138,8 @@ public class GD_Chinh extends javax.swing.JFrame {
         btn_tab_TKnv = new javax.swing.JButton();
         btn_tab_TKkh = new javax.swing.JButton();
         btn_tab_TKsp = new javax.swing.JButton();
-        btn_tab_TKsp1 = new javax.swing.JButton();
-        btn_tab_TKncc = new javax.swing.JPanel();
+        btn_tab_TKncc = new javax.swing.JButton();
+        pnl_tab_Form_TKNV = new javax.swing.JPanel();
         pnl_tab_FormTKKH = new javax.swing.JPanel();
         pnl_tab_FormTKSP = new javax.swing.JPanel();
         pnl_tab_FormTKNCC = new javax.swing.JPanel();
@@ -138,7 +155,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         btn_tab_TKeHT = new javax.swing.JButton();
         btn_tab_TKeHBC = new javax.swing.JButton();
         btn_tab_TKeKH = new javax.swing.JButton();
-        btn_tab_TKedt = new javax.swing.JPanel();
+        pnl_tab_Form_TKedt = new javax.swing.JPanel();
         pnl_tab_FormTKeht = new javax.swing.JPanel();
         pnl_tab_FormTKhbc = new javax.swing.JPanel();
         pnl_tab_FormTKkh = new javax.swing.JPanel();
@@ -154,7 +171,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         btn_tab_2 = new javax.swing.JButton();
         btn_tab_3 = new javax.swing.JButton();
         btn_tab_4 = new javax.swing.JButton();
-        btn_tab_sp1 = new javax.swing.JPanel();
+        pnl_tab_sp1 = new javax.swing.JPanel();
         pnl_tab_sp2 = new javax.swing.JPanel();
         pnl_tab_sp3 = new javax.swing.JPanel();
         pnl_tab_sp4 = new javax.swing.JPanel();
@@ -883,15 +900,15 @@ public class GD_Chinh extends javax.swing.JFrame {
             }
         });
 
-        btn_tab_TKsp1.setBackground(new java.awt.Color(255, 255, 255));
-        btn_tab_TKsp1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        btn_tab_TKsp1.setForeground(new java.awt.Color(153, 153, 153));
-        btn_tab_TKsp1.setText("Tìm Kiếm Nhà Cung Cấp");
-        btn_tab_TKsp1.setBorder(null);
-        btn_tab_TKsp1.setContentAreaFilled(false);
-        btn_tab_TKsp1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btn_tab_TKncc.setBackground(new java.awt.Color(255, 255, 255));
+        btn_tab_TKncc.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        btn_tab_TKncc.setForeground(new java.awt.Color(153, 153, 153));
+        btn_tab_TKncc.setText("Tìm Kiếm Nhà Cung Cấp");
+        btn_tab_TKncc.setBorder(null);
+        btn_tab_TKncc.setContentAreaFilled(false);
+        btn_tab_TKncc.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_tab_TKsp1MouseClicked(evt);
+                btn_tab_TKnccMouseClicked(evt);
             }
         });
 
@@ -907,14 +924,14 @@ public class GD_Chinh extends javax.swing.JFrame {
                 .addGap(45, 45, 45)
                 .addComponent(btn_tab_TKsp)
                 .addGap(43, 43, 43)
-                .addComponent(btn_tab_TKsp1)
+                .addComponent(btn_tab_TKncc)
                 .addContainerGap(294, Short.MAX_VALUE))
         );
         pnl_menuTab_TimKiemLayout.setVerticalGroup(
             pnl_menuTab_TimKiemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_menuTab_TimKiemLayout.createSequentialGroup()
                 .addGroup(pnl_menuTab_TimKiemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_tab_TKsp1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_tab_TKncc, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_tab_TKnv, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
                     .addComponent(btn_tab_TKkh, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_tab_TKsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -923,20 +940,20 @@ public class GD_Chinh extends javax.swing.JFrame {
 
         pnl_FormTimKiem.add(pnl_menuTab_TimKiem, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
 
-        btn_tab_TKncc.setBackground(new java.awt.Color(0, 153, 153));
+        pnl_tab_Form_TKNV.setBackground(new java.awt.Color(0, 153, 153));
 
-        javax.swing.GroupLayout btn_tab_TKnccLayout = new javax.swing.GroupLayout(btn_tab_TKncc);
-        btn_tab_TKncc.setLayout(btn_tab_TKnccLayout);
-        btn_tab_TKnccLayout.setHorizontalGroup(
-            btn_tab_TKnccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pnl_tab_Form_TKNVLayout = new javax.swing.GroupLayout(pnl_tab_Form_TKNV);
+        pnl_tab_Form_TKNV.setLayout(pnl_tab_Form_TKNVLayout);
+        pnl_tab_Form_TKNVLayout.setHorizontalGroup(
+            pnl_tab_Form_TKNVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1300, Short.MAX_VALUE)
         );
-        btn_tab_TKnccLayout.setVerticalGroup(
-            btn_tab_TKnccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnl_tab_Form_TKNVLayout.setVerticalGroup(
+            pnl_tab_Form_TKNVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 720, Short.MAX_VALUE)
         );
 
-        pnl_FormTimKiem.add(btn_tab_TKncc, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormTimKiem.add(pnl_tab_Form_TKNV, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_tab_FormTKKH.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -1138,20 +1155,20 @@ public class GD_Chinh extends javax.swing.JFrame {
 
         pnl_FormThongKe.add(pnl_menuTab_ThongKe, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
 
-        btn_tab_TKedt.setBackground(new java.awt.Color(0, 153, 153));
+        pnl_tab_Form_TKedt.setBackground(new java.awt.Color(0, 153, 153));
 
-        javax.swing.GroupLayout btn_tab_TKedtLayout = new javax.swing.GroupLayout(btn_tab_TKedt);
-        btn_tab_TKedt.setLayout(btn_tab_TKedtLayout);
-        btn_tab_TKedtLayout.setHorizontalGroup(
-            btn_tab_TKedtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pnl_tab_Form_TKedtLayout = new javax.swing.GroupLayout(pnl_tab_Form_TKedt);
+        pnl_tab_Form_TKedt.setLayout(pnl_tab_Form_TKedtLayout);
+        pnl_tab_Form_TKedtLayout.setHorizontalGroup(
+            pnl_tab_Form_TKedtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1300, Short.MAX_VALUE)
         );
-        btn_tab_TKedtLayout.setVerticalGroup(
-            btn_tab_TKedtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnl_tab_Form_TKedtLayout.setVerticalGroup(
+            pnl_tab_Form_TKedtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 720, Short.MAX_VALUE)
         );
 
-        pnl_FormThongKe.add(btn_tab_TKedt, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormThongKe.add(pnl_tab_Form_TKedt, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_tab_FormTKeht.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -1353,20 +1370,20 @@ public class GD_Chinh extends javax.swing.JFrame {
 
         pnl_FormBanHang.add(pnl_menuTab_BanHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1090, 50));
 
-        btn_tab_sp1.setBackground(new java.awt.Color(0, 153, 153));
+        pnl_tab_sp1.setBackground(new java.awt.Color(0, 153, 153));
 
-        javax.swing.GroupLayout btn_tab_sp1Layout = new javax.swing.GroupLayout(btn_tab_sp1);
-        btn_tab_sp1.setLayout(btn_tab_sp1Layout);
-        btn_tab_sp1Layout.setHorizontalGroup(
-            btn_tab_sp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pnl_tab_sp1Layout = new javax.swing.GroupLayout(pnl_tab_sp1);
+        pnl_tab_sp1.setLayout(pnl_tab_sp1Layout);
+        pnl_tab_sp1Layout.setHorizontalGroup(
+            pnl_tab_sp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1300, Short.MAX_VALUE)
         );
-        btn_tab_sp1Layout.setVerticalGroup(
-            btn_tab_sp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnl_tab_sp1Layout.setVerticalGroup(
+            pnl_tab_sp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 800, Short.MAX_VALUE)
         );
 
-        pnl_FormBanHang.add(btn_tab_sp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormBanHang.add(pnl_tab_sp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
 
         pnl_tab_sp2.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -1434,7 +1451,7 @@ public class GD_Chinh extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     public void addBorder(){
-        buttons = new JButton[6];
+        buttons = new JButton[18];
         buttons[0] = btn_tab_SanPham;
         buttons[1] = btn_tab_LoaiSanPham;
         buttons[2] = btn_tab_NhaCungCap;
@@ -1442,6 +1459,21 @@ public class GD_Chinh extends javax.swing.JFrame {
         buttons[3] =btn_tab_NV;
         buttons[4] =btn_tab_CaLam;
         buttons[5] = btn_tab_Luong;
+        buttons[6] = btn_tab_1;
+        buttons[7] = btn_tab_2;
+        buttons[8] = btn_tab_3;
+        buttons[9] = btn_tab_4;
+        buttons[10] = btn_tab_TKnv;
+        buttons[11] = btn_tab_TKkh;
+        buttons[12] = btn_tab_TKsp;
+        buttons[13] = btn_tab_TKncc;
+//        buttons[14] = btn_tab_HeThong;
+        buttons[14] = btn_tab_TKeDT;
+        buttons[15] = btn_tab_TKeHT;
+        buttons[16] = btn_tab_TKeHBC;
+        buttons[17] = btn_tab_TKeKH;
+
+        
         
         setButtonBorder(btn_tab_SanPham);
         setButtonBorder(btn_tab_NV);
@@ -1743,6 +1775,10 @@ public class GD_Chinh extends javax.swing.JFrame {
 
     private void btn_tab_TKnvMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKnvMouseClicked
         // TODO add your handling code here:
+        pnl_tab_Form_TKNV.setVisible(true);
+        pnl_tab_FormTKKH.setVisible(false);
+        pnl_tab_FormTKSP.setVisible(false);
+        pnl_tab_FormTKNCC.setVisible(false);
     }//GEN-LAST:event_btn_tab_TKnvMouseClicked
 
     private void btn_tab_TKnvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_TKnvActionPerformed
@@ -1751,15 +1787,27 @@ public class GD_Chinh extends javax.swing.JFrame {
 
     private void btn_tab_TKkhMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKkhMouseClicked
         // TODO add your handling code here:
+        pnl_tab_Form_TKNV.setVisible(false);
+        pnl_tab_FormTKKH.setVisible(true);
+        pnl_tab_FormTKSP.setVisible(false);
+        pnl_tab_FormTKNCC.setVisible(false);
     }//GEN-LAST:event_btn_tab_TKkhMouseClicked
 
     private void btn_tab_TKspMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKspMouseClicked
         // TODO add your handling code here:
+        pnl_tab_Form_TKNV.setVisible(false);
+        pnl_tab_FormTKKH.setVisible(false);
+        pnl_tab_FormTKSP.setVisible(true);
+        pnl_tab_FormTKNCC.setVisible(false);
     }//GEN-LAST:event_btn_tab_TKspMouseClicked
 
-    private void btn_tab_TKsp1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKsp1MouseClicked
+    private void btn_tab_TKnccMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKnccMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tab_TKsp1MouseClicked
+        pnl_tab_Form_TKNV.setVisible(false);
+        pnl_tab_FormTKKH.setVisible(false);
+        pnl_tab_FormTKSP.setVisible(false);
+        pnl_tab_FormTKNCC.setVisible(true);
+    }//GEN-LAST:event_btn_tab_TKnccMouseClicked
 
     private void btn_tab_HeThongMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_HeThongMouseClicked
         // TODO add your handling code here:
@@ -1771,22 +1819,39 @@ public class GD_Chinh extends javax.swing.JFrame {
 
     private void btn_tab_TKeDTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKeDTMouseClicked
         // TODO add your handling code here:
+        pnl_tab_Form_TKedt.setVisible(true);
+        pnl_tab_FormTKeht.setVisible(false);
+        pnl_tab_FormTKhbc.setVisible(false);
+        pnl_tab_FormTKkh.setVisible(false);
     }//GEN-LAST:event_btn_tab_TKeDTMouseClicked
 
     private void btn_tab_TKeDTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_TKeDTActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_btn_tab_TKeDTActionPerformed
 
     private void btn_tab_TKeHTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKeHTMouseClicked
         // TODO add your handling code here:
+        pnl_tab_Form_TKedt.setVisible(false);
+        pnl_tab_FormTKeht.setVisible(true);
+        pnl_tab_FormTKhbc.setVisible(false);
+        pnl_tab_FormTKkh.setVisible(false);
     }//GEN-LAST:event_btn_tab_TKeHTMouseClicked
 
     private void btn_tab_TKeHBCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKeHBCMouseClicked
         // TODO add your handling code here:
+        pnl_tab_Form_TKedt.setVisible(false);
+        pnl_tab_FormTKeht.setVisible(false);
+        pnl_tab_FormTKhbc.setVisible(true);
+        pnl_tab_FormTKkh.setVisible(false);
     }//GEN-LAST:event_btn_tab_TKeHBCMouseClicked
 
     private void btn_tab_TKeKHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TKeKHMouseClicked
         // TODO add your handling code here:
+        pnl_tab_Form_TKedt.setVisible(false);
+        pnl_tab_FormTKeht.setVisible(false);
+        pnl_tab_FormTKhbc.setVisible(false);
+        pnl_tab_FormTKkh.setVisible(true);
     }//GEN-LAST:event_btn_tab_TKeKHMouseClicked
 
     private void btn_tab_TTTKMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_TTTKMouseClicked
@@ -1822,6 +1887,11 @@ public class GD_Chinh extends javax.swing.JFrame {
 
     private void btn_tab_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_1MouseClicked
         // TODO add your handling code here:
+        pnl_tab_sp1.setVisible(true);
+        pnl_tab_sp2.setVisible(false);
+        pnl_tab_sp3.setVisible(false);
+        pnl_tab_sp4.setVisible(false);
+        
     }//GEN-LAST:event_btn_tab_1MouseClicked
 
     private void btn_tab_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tab_1ActionPerformed
@@ -1830,14 +1900,26 @@ public class GD_Chinh extends javax.swing.JFrame {
 
     private void btn_tab_2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_2MouseClicked
         // TODO add your handling code here:
+        pnl_tab_sp1.setVisible(false);
+        pnl_tab_sp2.setVisible(true);
+        pnl_tab_sp3.setVisible(false);
+        pnl_tab_sp4.setVisible(false);
     }//GEN-LAST:event_btn_tab_2MouseClicked
 
     private void btn_tab_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_3MouseClicked
         // TODO add your handling code here:
+        pnl_tab_sp1.setVisible(false);
+        pnl_tab_sp2.setVisible(false);
+        pnl_tab_sp3.setVisible(true);
+        pnl_tab_sp4.setVisible(false);
     }//GEN-LAST:event_btn_tab_3MouseClicked
 
     private void btn_tab_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tab_4MouseClicked
         // TODO add your handling code here:
+        pnl_tab_sp1.setVisible(false);
+        pnl_tab_sp2.setVisible(false);
+        pnl_tab_sp3.setVisible(false);
+        pnl_tab_sp4.setVisible(true);
     }//GEN-LAST:event_btn_tab_4MouseClicked
 
     /**
@@ -1892,14 +1974,11 @@ public class GD_Chinh extends javax.swing.JFrame {
     private javax.swing.JButton btn_tab_TKeHBC;
     private javax.swing.JButton btn_tab_TKeHT;
     private javax.swing.JButton btn_tab_TKeKH;
-    private javax.swing.JPanel btn_tab_TKedt;
     private javax.swing.JButton btn_tab_TKkh;
-    private javax.swing.JPanel btn_tab_TKncc;
+    private javax.swing.JButton btn_tab_TKncc;
     private javax.swing.JButton btn_tab_TKnv;
     private javax.swing.JButton btn_tab_TKsp;
-    private javax.swing.JButton btn_tab_TKsp1;
     private javax.swing.JButton btn_tab_TTTK;
-    private javax.swing.JPanel btn_tab_sp1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lbl_exit;
     private javax.swing.JLabel lbl_icon_TaiKhoan;
@@ -1976,6 +2055,9 @@ public class GD_Chinh extends javax.swing.JFrame {
     private javax.swing.JPanel pnl_tab_FormTKkh;
     private javax.swing.JPanel pnl_tab_FormTTNhanVien;
     private javax.swing.JPanel pnl_tab_FormTTTK;
+    private javax.swing.JPanel pnl_tab_Form_TKNV;
+    private javax.swing.JPanel pnl_tab_Form_TKedt;
+    private javax.swing.JPanel pnl_tab_sp1;
     private javax.swing.JPanel pnl_tab_sp2;
     private javax.swing.JPanel pnl_tab_sp3;
     private javax.swing.JPanel pnl_tab_sp4;
