@@ -217,7 +217,6 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_tab_FormTKNCC = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1300, 700));
         setSize(new java.awt.Dimension(0, 700));
 
         pnl_Main.setBackground(new java.awt.Color(255, 255, 255));
@@ -782,6 +781,8 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_Main.add(pnl_FormTongQuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 700));
 
         pnl_FormSanPham.setBackground(new java.awt.Color(255, 255, 255));
+        pnl_FormSanPham.setMinimumSize(new java.awt.Dimension(1300, 700));
+        pnl_FormSanPham.setPreferredSize(new java.awt.Dimension(1300, 700));
         pnl_FormSanPham.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbl_text_SanPham.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
@@ -849,7 +850,7 @@ public class GD_Chinh extends javax.swing.JFrame {
                 .addComponent(btn_tab_DMSanPham)
                 .addGap(45, 45, 45)
                 .addComponent(btn_tab_NhaCungCap)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(588, Short.MAX_VALUE))
         );
         pnl_menuTab_SanPhamLayout.setVerticalGroup(
             pnl_menuTab_SanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -869,14 +870,14 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_tab_FormSanPham.setLayout(pnl_tab_FormSanPhamLayout);
         pnl_tab_FormSanPhamLayout.setHorizontalGroup(
             pnl_tab_FormSanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1300, Short.MAX_VALUE)
+            .addGap(0, 1090, Short.MAX_VALUE)
         );
         pnl_tab_FormSanPhamLayout.setVerticalGroup(
             pnl_tab_FormSanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 620, Short.MAX_VALUE)
         );
 
-        pnl_FormSanPham.add(pnl_tab_FormSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormSanPham.add(pnl_tab_FormSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1090, 620));
 
         pnl_tab_FormDMSanPham.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -888,10 +889,10 @@ public class GD_Chinh extends javax.swing.JFrame {
         );
         pnl_tab_FormDMSanPhamLayout.setVerticalGroup(
             pnl_tab_FormDMSanPhamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 620, Short.MAX_VALUE)
         );
 
-        pnl_FormSanPham.add(pnl_tab_FormDMSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormSanPham.add(pnl_tab_FormDMSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 620));
 
         pnl_tab_FormTKSP.setBackground(new java.awt.Color(153, 153, 0));
 
@@ -903,15 +904,16 @@ public class GD_Chinh extends javax.swing.JFrame {
         );
         pnl_tab_FormTKSPLayout.setVerticalGroup(
             pnl_tab_FormTKSPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 620, Short.MAX_VALUE)
         );
 
-        pnl_FormSanPham.add(pnl_tab_FormTKSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormSanPham.add(pnl_tab_FormTKSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 620));
 
-        pnl_Main.add(pnl_FormSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
+        pnl_Main.add(pnl_FormSanPham, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 700));
 
         pnl_FormKhachHang.setBackground(new java.awt.Color(255, 255, 255));
-        pnl_FormKhachHang.setPreferredSize(new java.awt.Dimension(1090, 800));
+        pnl_FormKhachHang.setMinimumSize(new java.awt.Dimension(1090, 700));
+        pnl_FormKhachHang.setPreferredSize(new java.awt.Dimension(1090, 700));
         pnl_FormKhachHang.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbl_text_KhachHang.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
@@ -1084,12 +1086,12 @@ public class GD_Chinh extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton4)
                     .addComponent(jButton5))
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
-        pnl_tab_FormKhachHang.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 980, 580));
+        pnl_tab_FormKhachHang.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 980, 550));
 
-        pnl_FormKhachHang.add(pnl_tab_FormKhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1090, 720));
+        pnl_FormKhachHang.add(pnl_tab_FormKhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1090, 620));
 
         pnl_tab_FormTKKhachHang.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -1101,14 +1103,16 @@ public class GD_Chinh extends javax.swing.JFrame {
         );
         pnl_tab_FormTKKhachHangLayout.setVerticalGroup(
             pnl_tab_FormTKKhachHangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 620, Short.MAX_VALUE)
         );
 
-        pnl_FormKhachHang.add(pnl_tab_FormTKKhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1090, 720));
+        pnl_FormKhachHang.add(pnl_tab_FormTKKhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1090, 620));
 
-        pnl_Main.add(pnl_FormKhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
+        pnl_Main.add(pnl_FormKhachHang, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 700));
 
         pnl_FormNhanVien.setBackground(new java.awt.Color(255, 255, 255));
+        pnl_FormNhanVien.setMinimumSize(new java.awt.Dimension(1090, 700));
+        pnl_FormNhanVien.setPreferredSize(new java.awt.Dimension(1090, 700));
         pnl_FormNhanVien.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbl_text_NhanVien.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
@@ -1217,10 +1221,10 @@ public class GD_Chinh extends javax.swing.JFrame {
         );
         pnl_tab_FormTTNhanVienLayout.setVerticalGroup(
             pnl_tab_FormTTNhanVienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 620, Short.MAX_VALUE)
         );
 
-        pnl_FormNhanVien.add(pnl_tab_FormTTNhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormNhanVien.add(pnl_tab_FormTTNhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 620));
 
         pnl_tab_FormCaLam.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -1232,10 +1236,10 @@ public class GD_Chinh extends javax.swing.JFrame {
         );
         pnl_tab_FormCaLamLayout.setVerticalGroup(
             pnl_tab_FormCaLamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 620, Short.MAX_VALUE)
         );
 
-        pnl_FormNhanVien.add(pnl_tab_FormCaLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormNhanVien.add(pnl_tab_FormCaLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 620));
 
         pnl_tab_FormLuong.setBackground(new java.awt.Color(153, 153, 0));
 
@@ -1247,10 +1251,10 @@ public class GD_Chinh extends javax.swing.JFrame {
         );
         pnl_tab_FormLuongLayout.setVerticalGroup(
             pnl_tab_FormLuongLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 620, Short.MAX_VALUE)
         );
 
-        pnl_FormNhanVien.add(pnl_tab_FormLuong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormNhanVien.add(pnl_tab_FormLuong, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 620));
 
         pnl_tab_FormTKNV.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -1262,14 +1266,15 @@ public class GD_Chinh extends javax.swing.JFrame {
         );
         pnl_tab_FormTKNVLayout.setVerticalGroup(
             pnl_tab_FormTKNVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGap(0, 620, Short.MAX_VALUE)
         );
 
-        pnl_FormNhanVien.add(pnl_tab_FormTKNV, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
+        pnl_FormNhanVien.add(pnl_tab_FormTKNV, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 620));
 
-        pnl_Main.add(pnl_FormNhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 800));
+        pnl_Main.add(pnl_FormNhanVien, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 1090, 700));
 
         pnl_FormHoaDon.setBackground(new java.awt.Color(255, 255, 255));
+        pnl_FormHoaDon.setPreferredSize(new java.awt.Dimension(10, 700));
         pnl_FormHoaDon.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbl_text_HoaDon.setFont(new java.awt.Font("Segoe UI Semibold", 0, 20)); // NOI18N
