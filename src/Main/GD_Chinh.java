@@ -163,6 +163,7 @@ public class GD_Chinh extends javax.swing.JFrame {
         btn_tab_dshd = new javax.swing.JButton();
         btn_tab_tkhd = new javax.swing.JButton();
         pnl_tab_Form_DSHoaDon = new javax.swing.JPanel();
+        frmHoaDon1 = new Main.FrmHoaDon();
         pnl_tab_FormTKHoaDon = new javax.swing.JPanel();
         pnl_FormHeThong = new javax.swing.JPanel();
         lbl_text_HeThong = new javax.swing.JLabel();
@@ -1342,11 +1343,15 @@ public class GD_Chinh extends javax.swing.JFrame {
         pnl_tab_Form_DSHoaDon.setLayout(pnl_tab_Form_DSHoaDonLayout);
         pnl_tab_Form_DSHoaDonLayout.setHorizontalGroup(
             pnl_tab_Form_DSHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1300, Short.MAX_VALUE)
+            .addGroup(pnl_tab_Form_DSHoaDonLayout.createSequentialGroup()
+                .addComponent(frmHoaDon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 12, Short.MAX_VALUE))
         );
         pnl_tab_Form_DSHoaDonLayout.setVerticalGroup(
             pnl_tab_Form_DSHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGroup(pnl_tab_Form_DSHoaDonLayout.createSequentialGroup()
+                .addComponent(frmHoaDon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 20, Short.MAX_VALUE))
         );
 
         pnl_FormHoaDon.add(pnl_tab_Form_DSHoaDon, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1300, 720));
@@ -2621,6 +2626,7 @@ public class GD_Chinh extends javax.swing.JFrame {
     private javax.swing.JButton btn_tab_dsncc;
     private javax.swing.JButton btn_tab_tkhd;
     private javax.swing.JButton btn_tab_tkncc;
+    private Main.FrmHoaDon frmHoaDon1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
